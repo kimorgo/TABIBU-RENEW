@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>DOCTORTYPE</title>
+        <meta charset = "UTF-8">
+        <title>externalStyle.html</title>
+        <link rel = "stylesheet" type = "text/css" href = "static/css/DoctorTypeStyle.css" />
+
+    </head>
+            
+            <body> 
+
+                <div id="DoctorType">
+                   <h1 style="font-family: Arial, Helvetica, sans-serif;">Choose your required specialist</h1>
+                     <div class="tab">
+                        <button class="tablinks" onmouseover="openDoctor(event, 'GeneralDoctor')">General Doctor</button>
+                        <button class="tablinks" onmouseover="openDoctor(event, 'Demartologist')">Demartologist</button>
+                        <button class="tablinks" onmouseover="openDoctor(event, 'Cardiologist')">Cardiologist</button>
+                        <button class="tablinks" onmouseover="openDoctor(event, 'Psychologist')">Psychologist</button>
+                        <button class="tablinks" onmouseover="openDoctor(event, 'Gynecologist')">Gynecologist</button>
+                      </div>
+                      
+                      <div id="GeneralDoctor" class="tabcontent">
+                               <h3><strong>Specialisation</strong></h3>
+                               <p>Treats all common medical conditions. Combines physical, psychological and social aspects of a person.</p>
+                               <a href="CarolineKanuthu.html" target="_blank">Dr.Caroline Kanuthu</a>
+                             <a href="JacklineKimorgo.html" target="_blank">Dr.Jackline Kimorgo</a>
+                      </div>
+                      
+                      <div id="Demartologist" class="tabcontent">
+                               <h3><strong>Specialisation</strong></h3>
+                               <p>Problems with skin, hair, nails? Do you have moles, scars, acne or skin allergies? Demartologist can help.</p>
+                               <a href="MaurineJepchumba.html" target="_blank">Dr.Maurine Jepchumba</a>
+                               <a href="SheilaNangila.html" target="_blank">Dr.Sheila Nangila</a>
+                      </div>
+                      
+                      <div id="Cardiologist" class="tabcontent">
+                              <h3><strong>Specialisation</strong></h3>
+                              <p>These are experts on heart and blood vessels. You can see them for any heart related failures or blood pressure issues.</p>
+                              <a href="JordanNtutu.html" target="_blank">Dr.Jordan Ntutu</a>
+                              <a href="DelvinKiplagat.html" target="_blank">Dr.Delvin Kiplagat</a>
+                      </div> 
+                      <div id="Psychologist" class="tabcontent">
+                              <h3><strong>Specialisation</strong></h3>
+                              <p>Experts on mental issues as well as depressions. #maintain your mental health.</p>
+                              <a href="PrudenceChepkoech.html" target="_blank">Dr.Prudence Chepkoech</a>
+                              <a href="CarolLanoi.html" target="_blank">Dr.Carol Lanoi</a>
+                        </div> 
+                      <div id="Gynecologist" class="tabcontent">
+                              <h3><strong>Specialisation</strong></h3>
+                              <p>Specialises in illness, injuries or diseases of the female reproductive system such as breast & hormonal problems and cervical cancers among others. </p>
+                              <a href="BettyWambui.html" target="_blank">Dr.Betty Wambui</a>
+                              <a href="LenoraWairimu.html" target="_blank">Dr.Lenora Wairimu</a>
+                      </div> 
+
+                      <script>
+                            function openDoctor(evt, Specialty) {
+                              var i, tabcontent, tablinks;
+                              tabcontent = document.getElementsByClassName("tabcontent");
+                              for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                              }
+                              tablinks = document.getElementsByClassName("tablinks");
+                              for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                              }
+                              document.getElementById(Specialty).style.display = "block";
+                              evt.currentTarget.className += " active";
+                            }
+                            </script> 
+                            <div class="clearfix"></div>
+                </div>
+                <div id="CarolineKanuthu">
+
+                </div>
+        
+    
+            </body>
+</html>
